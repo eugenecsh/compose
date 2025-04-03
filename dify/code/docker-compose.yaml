@@ -625,7 +625,7 @@ services:
 
   # OceanBase vector database
   oceanbase:
-    image: quay.io/oceanbase/oceanbase-ce:4.3.5.1-101000042025031818
+    image: quay.io/oceanbase/oceanbase-ce:3.0-100000142024101215
     profiles:
       - oceanbase
     restart: always
@@ -696,7 +696,7 @@ services:
       - milvus
 
   milvus-standalone:
-    image: milvusdb/milvus:v2.5.0-beta
+    image: milvusdb/milvus:v2.3.1
     profiles:
       - milvus
     command: [ 'milvus', 'run', 'standalone' ]
